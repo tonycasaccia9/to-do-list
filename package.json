@@ -1,0 +1,14 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Tony Casaccia",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  }
+}

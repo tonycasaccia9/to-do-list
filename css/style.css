@@ -1,0 +1,224 @@
+@import url("/css/queries.css");
+:root {
+  --color-background: #f5f3f4; /* Warm, off-white background */
+  --color-accent: #6c757d; /* Soft, muted indigo as an accent */
+  --color-light: #d8e2dc; /* Light, desaturated blush tone */
+  --color-text: #3b3a3a; /* Dark charcoal for comfortable readability */
+  --color-highlight: #a2b9bc;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: "Poppins";
+  color: var(--color-text);
+}
+
+.body__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin: auto 9rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  border: 3px solid var(--color-accent);
+  background-color: var(--color-light);
+  padding: 1rem 6rem 4rem 6rem;
+  border-radius: 12px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.question__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.input__text {
+  width: 300px;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--color-background);
+  font-family: "Poppins";
+  padding-left: 0.8rem;
+}
+
+.input__text::placeholder {
+  margin-left: 2rem;
+}
+
+.prompt__label {
+  font-size: 1.4rem;
+}
+
+.priority__select {
+  background-color: var(--color-background);
+  border-radius: 12px;
+  border: none;
+  height: 50px;
+  font-size: 1.2rem;
+  color: #7c7c7c;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.btn__add-task {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  transition: all 0.2s ease-in;
+  outline: none;
+  border: 3px solid var(--color-accent);
+  background-color: var(--color-background);
+  color: var(--color-accent);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__add-task:hover {
+  transform: scale(1.05);
+}
+
+.list__items {
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+  padding: 2rem 2rem;
+  overflow-y: auto;
+}
+
+.list__item {
+  position: relative;
+  border: 2px solid var(--color-accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  gap: 13rem;
+  list-style: none;
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  background-color: var(--color-light);
+  cursor: pointer;
+}
+
+.todo__info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.list__item::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid var(--color-accent);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.list__item.checked::before {
+  background-image: url(/img/check-icon.png);
+
+  border: none;
+  left: 20px;
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background-repeat: no-repeat; /* Avoids any repeat */
+}
+
+.checked .item__text {
+  text-decoration: line-through;
+}
+
+.checked {
+  opacity: 0.6;
+}
+
+.item__text {
+  font-size: 1rem;
+}
+
+.priority {
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  padding: 0.3em 0.8em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+}
+
+.high {
+  background-color: #d9534f; /* Bright red for high */
+}
+
+.high:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+
+.mid {
+  background-color: #f0ad4e; /* Vibrant yellow-orange for medium */
+}
+
+.medium:hover {
+  background-color: #ec971f; /* Darker orange on hover */
+}
+
+.low {
+  background-color: #5cb85c; /* Green for low */
+}
+
+.low:hover {
+  background-color: #4cae4c;
+}
+
+.remove__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.remove__item:hover {
+  transform: scale(1.05);
+}
