@@ -98,7 +98,7 @@
   body .prompt__label {
     font-size: 1.2rem;
   }
-  /* 
+
   body .btn__add-task {
     border-radius: 50%;
     height: 30px;
@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  } */
+  }
 
   body .list__items {
     display: flex;
@@ -123,7 +123,7 @@
   }
 
   body .list__item {
-    width: 320px;
+    width: 300px;
     height: 10px;
     gap: 0.8rem;
   }

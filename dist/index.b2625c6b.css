@@ -94,6 +94,21 @@
     font-size: 1.2rem;
   }
 
+  body .btn__add-task {
+    border: 2.4px solid var(--color-accent);
+    background-color: var(--color-background);
+    width: 30px;
+    height: 30px;
+    color: var(--color-accent);
+    border-radius: 50%;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: all .2s ease-in;
+    display: flex;
+  }
+
   body .list__items {
     flex-direction: column;
     align-items: center;
@@ -103,7 +118,7 @@
 
   body .list__item {
     gap: .8rem;
-    width: 320px;
+    width: 300px;
     height: 10px;
   }
 
@@ -144,6 +159,7 @@ body {
 .body__container {
   flex-direction: column;
   align-items: center;
+  margin: auto;
   display: flex;
 }
 
