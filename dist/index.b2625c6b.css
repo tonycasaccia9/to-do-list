@@ -1,6 +1,7 @@
 @media (width <= 920px) {
   body .form__container {
     max-width: 400px;
+    margin-bottom: 0;
   }
 
   body .form__heading {
@@ -30,14 +31,13 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    transition: all .2s ease-in;
     display: flex;
   }
 
   body .list__items {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.6rem;
     max-height: 300px;
     display: flex;
   }
@@ -50,27 +50,37 @@
 
 @media (width <= 620px) {
   body .form__container {
-    max-width: 350px;
+    width: 350px;
     margin-top: 3rem;
     margin-bottom: 0;
-    padding: 1rem;
-  }
-
-  body .form {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    display: flex;
+    padding: .4rem;
   }
 
   body .form__heading {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
     font-size: 1.2rem;
+  }
+
+  body .form {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    row-gap: 1.4rem;
+    width: 400px;
+    display: grid;
+  }
+
+  body .question__container.q__task {
+    grid-column: 1 / -1;
+  }
+
+  body .question__container {
+    gap: .6rem;
   }
 
   body .input__text {
     border-radius: 12px;
-    width: 150px;
+    width: 300px;
     height: 30px;
     font-size: 1rem;
   }
@@ -93,7 +103,7 @@
 
   body .list__item {
     gap: .8rem;
-    width: 200px;
+    width: 320px;
     height: 10px;
   }
 
@@ -109,6 +119,11 @@
   body .priority {
     padding: .1em .4em;
     font-size: .8rem;
+  }
+
+  body .remove__item {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -144,9 +159,14 @@ body {
   align-items: center;
   max-width: 700px;
   margin-top: 6rem;
-  margin-bottom: 4rem;
-  padding: 1rem 6rem 4rem;
+  margin-bottom: 2rem;
+  padding: 1rem 6rem 2rem;
   display: flex;
+}
+
+.form__heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .form {
@@ -154,6 +174,7 @@ body {
   align-items: center;
   gap: 2rem;
   display: flex;
+  transform: scale(.8);
 }
 
 .question__container {
@@ -216,7 +237,7 @@ body {
   align-items: center;
   gap: 2rem;
   max-height: 800px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: flex;
   overflow-y: auto;
 }
@@ -230,7 +251,7 @@ body {
   align-items: center;
   gap: 13rem;
   width: 600px;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   list-style: none;
   display: flex;
   position: relative;
@@ -240,6 +261,7 @@ body {
   cursor: pointer;
   align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
   display: flex;
 }
 
@@ -280,6 +302,7 @@ body {
 }
 
 .priority {
+  opacity: .8;
   color: #fff;
   cursor: pointer;
   border: none;

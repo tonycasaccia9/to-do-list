@@ -27,15 +27,21 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 6rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   max-width: 700px;
   border: 3px solid var(--color-accent);
   background-color: var(--color-light);
-  padding: 1rem 6rem 4rem 6rem;
+  padding: 1rem 6rem 2rem 6rem;
   border-radius: 12px;
 }
 
+.form__heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .form {
+  transform: scale(0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,7 +109,7 @@ body {
   align-items: center;
 
   gap: 2rem;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   overflow-y: auto;
 }
 
@@ -116,7 +122,7 @@ body {
   width: 600px;
   gap: 13rem;
   list-style: none;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 12px;
   background-color: var(--color-light);
   cursor: pointer;
@@ -127,6 +133,7 @@ body {
   align-items: center;
   gap: 1rem;
   cursor: pointer;
+  margin-left: 2rem;
 }
 .list__item::before {
   content: "";
@@ -166,6 +173,7 @@ body {
 }
 
 .priority {
+  opacity: 0.8;
   color: #ffffff;
   font-size: 1rem;
   border: none;
