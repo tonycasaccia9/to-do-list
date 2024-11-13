@@ -14,6 +14,7 @@ body {
 }
 
 .body__container {
+  overflow-x: hidden;
   margin: auto;
   display: flex;
   flex-direction: column;

@@ -161,6 +161,7 @@ body {
   align-items: center;
   margin: auto;
   display: flex;
+  overflow-x: hidden;
 }
 
 .container {
